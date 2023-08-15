@@ -65,7 +65,11 @@ const CreateUser = () => {
               placeholder="age"
             />
           </div>
-          <button type="submit" className="btn btn-success">
+          <button
+            disabled={!name || !email || !age}
+            type="submit"
+            className="btn btn-success"
+          >
             Submit
           </button>
         </form>
